@@ -1,0 +1,155 @@
+body {
+    background-color: #8A7DB2; /* lavender color */
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template:
+            "header header"
+            "nav main"
+            "footer footer"
+            / 600px 1fr;
+    }
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #5B527A; /* darker purple */
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  /* Distribute content evenly */
+}
+
+.sidebar a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 10% 20%;
+    font-size: 1.3rem;
+    font-size: calc(1rem + 0.5vw);  /* Base size + viewport scaling */
+}
+
+@media (max-width: 768px) {
+    .sidebar a {
+        font-size: calc(0.8rem + 0.5vw);
+    }
+}
+
+.sidebar img {
+    display: flex;
+    margin: 5% auto;
+    width: 60%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #e6c2fe;
+}
+
+nav li {
+    padding: 1em 1em;
+}
+
+nav a:visited {
+    color: #b08cd2;
+}
+
+nav a:hover {
+    color: #7a33cc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em; 
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #C9BFD9; /* light purple */
+    padding: 5%;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5%;
+    font-size: calc(2rem + 1vw);  /* Base size + viewport scaling */
+}
+
+.main-content p {
+    margin-bottom: 5%;
+}
+
+.main-content img {
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.TM ul{
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+}
+
+.products img {
+    max-width: 300px; /* Reduced size */
+    margin-left: 10%; /* Gap between product images */
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* semi-transparent */
+    padding: 0.5rem 0;
+}
+
+#mobile {
+    display: inline;
+} 
+
+#desktop {
+    display: none;
+}
+
