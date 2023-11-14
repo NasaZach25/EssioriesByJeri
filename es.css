@@ -104,9 +104,19 @@ nav ul {
     margin-bottom: 5%;
 }
 
-.main-content img {
+/* .main-content img {
     max-width: 60%;
     border-radius: 50%;
+} */
+
+img {
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.square {
+    max-width: 60%;
+    border-radius: 20%;
 }
 
 .wrapper {
@@ -117,6 +127,12 @@ nav ul {
 }
 
 .TM ul{
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.TM {
     text-align: center;
     list-style-type: none;
     font-size: 20px;
